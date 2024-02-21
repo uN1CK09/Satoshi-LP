@@ -14,8 +14,7 @@ public class Lt01_SeqEx16 {
         
         bruto = (quanthoras*valorhoras);
         percdesc = percdesc/100;
-        percdesc = bruto*percdesc;
-        líquido = (bruto-percdesc);
+        líquido = (bruto-(bruto*percdesc));
         salário = líquido + (dependentes*100);
         JOptionPane.showMessageDialog(null,"O salário líquido é: R$ " + salário);
     }    
