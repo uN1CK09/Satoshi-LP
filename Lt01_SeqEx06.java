@@ -1,6 +1,6 @@
 //Receba os valores em x e y. Efetua a troca de seus valores e mostre seus conteúdos.
 import javax.swing.JOptionPane;
-public class Lt_SeqEx06 {
+public class Lt01_SeqEx06 {
     public static void main (String args [ ] ) {
         int x, y, z;
         x = Integer.parseInt(JOptionPane.showInputDialog("Insira o valor de X: "));
