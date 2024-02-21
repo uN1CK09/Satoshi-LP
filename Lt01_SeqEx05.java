@@ -1,6 +1,6 @@
 //Receba os coeficientes A, B e C de uma equação do 2º grau (AX²+BX+C=0). Calcule e mostre as raízes reais (considerar que a equação possue2 raízes).
 import javax.swing.JOptionPane;
-public class Lt_SeqEx05 {
+public class Lt01_SeqEx05 {
     public static void main (String args [ ] ) {
         double A, B, C, Delta, x1, x2;
         A = Float.parseFloat(JOptionPane.showInputDialog("Insira o valor de A"));
