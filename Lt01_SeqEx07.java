@@ -2,7 +2,7 @@
 // volume = (comprimento.largura.altura)
 import javax.swing.JOptionPane;
 public class Lt01_SeqEx07 {
-    public static void main (String arg [ ] ) {
+    public static void main (String args [ ] ) {
         int comprimento, altura, largura, volume;
         comprimento = Integer.parseInt(JOptionPane.showInputDialog("Insira o valor do comprimento: "));
         largura = Integer.parseInt(JOptionPane.showInputDialog("Insira o valor da largura: "));
