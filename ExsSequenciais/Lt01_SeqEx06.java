@@ -1,4 +1,5 @@
 //Receba os valores em x e y. Efetua a troca de seus valores e mostre seus conteúdos.
+package ExsSequenciais;
 import javax.swing.JOptionPane;
 public class Lt01_SeqEx06 {
     public static void main (String args [ ] ) {

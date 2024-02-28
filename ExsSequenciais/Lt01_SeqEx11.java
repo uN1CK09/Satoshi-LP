@@ -1,4 +1,5 @@
 //Receba o raio de uma circunferência. Calcule e mostre o comprimento da circunferência
+package ExsSequenciais;
 import javax.swing.JOptionPane;
 public class Lt01_SeqEx11 {
     public static void main (String args [ ] ) {

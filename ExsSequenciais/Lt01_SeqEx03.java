@@ -1,5 +1,6 @@
 // Receba a base e a altura de um triângulo. Calcule e mostre a sua área.
 // area = base * altura/2 
+package ExsSequenciais;
 import javax.swing.JOptionPane;
 public class Lt01_SeqEx03 {
     public static void main (String args [ ] ) {

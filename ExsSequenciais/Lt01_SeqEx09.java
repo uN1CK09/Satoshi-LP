@@ -1,4 +1,5 @@
 //Receba os 2 números inteiros. Calcule e mostre a soma dos quadrados.
+package ExsSequenciais;
 import javax.swing.JOptionPane;
 public class Lt01_SeqEx09 {
     public static void main (String Args[ ]) {

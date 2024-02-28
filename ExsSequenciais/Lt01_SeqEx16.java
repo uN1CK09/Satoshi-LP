@@ -2,6 +2,7 @@
 //Calcule o salário que serão as horas trabalhadas x o valor por hora. 
 //Calcule o salário líquido (= Salário Bruto – desconto). 
 //A cada dependente será acrescido R$ 100 no Salário Líquido. Exiba o salário a receber.
+package ExsSequenciais;
 import javax.swing.JOptionPane;
 public class Lt01_SeqEx16 {
     public static void main(String[] args) {

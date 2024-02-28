@@ -1,5 +1,6 @@
 //Receba os valores do comprimento, largura e altura de um paralelepípedo. Calcule e mostre seu volume.
 // volume = (comprimento.largura.altura)
+package ExsSequenciais;
 import javax.swing.JOptionPane;
 public class Lt01_SeqEx07 {
     public static void main (String args [ ] ) {

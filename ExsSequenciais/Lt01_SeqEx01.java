@@ -1,4 +1,5 @@
 //Calcular área do quadrado
+package ExsSequenciais;
 import javax.swing.JOptionPane;
 public class Lt01_SeqEx01 {
     public static void main (String args [ ] ) {

@@ -1,4 +1,5 @@
 //Receba 2 números reais. Calcule e mostre a diferença desses valores.
+package ExsSequenciais;
 import javax.swing.JOptionPane;
 public class Lt01_SeqEx10 {
     public static void main (String args [ ] ) {

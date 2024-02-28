@@ -1,4 +1,5 @@
 //Reajuste de salário
+package ExsSequenciais;
 import javax.swing.JOptionPane;
 public class Lt01_SeqEx02 {
     public static void main (String args [ ] ) {
