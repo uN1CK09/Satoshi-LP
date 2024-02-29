@@ -8,6 +8,7 @@ public class Lt01_DecEx20 {
     public static void main(String[] args) {
             int A, B, C;
             double delta, x1, x2;
+            
             A = Integer.parseInt(JOptionPane.showInputDialog(null, "Insira o valor de A"));
             B = Integer.parseInt(JOptionPane.showInputDialog(null, "Insira o valor de B"));
             C = Integer.parseInt(JOptionPane.showInputDialog(null, "Insira o valor de C"));

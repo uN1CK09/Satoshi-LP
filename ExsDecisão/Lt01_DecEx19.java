@@ -6,6 +6,7 @@ import javax.swing.JOptionPane;
 public class Lt01_DecEx19 {
     public static void main(String[] args) {
         double num1, num2;
+        
         num1 = Float.parseFloat(JOptionPane.showInputDialog(null, "Insira o valor do primeiro número"));
         num2 = Float.parseFloat(JOptionPane.showInputDialog(null, "Insira o valor do segundo número"));
         

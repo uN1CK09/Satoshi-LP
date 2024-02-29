@@ -2,12 +2,14 @@
 //Calcule o salário que serão as horas trabalhadas x o valor por hora. 
 //Calcule o salário líquido (= Salário Bruto – desconto). 
 //A cada dependente será acrescido R$ 100 no Salário Líquido. Exiba o salário a receber.
+
 package ExsSequenciais;
 import javax.swing.JOptionPane;
 public class Lt01_SeqEx16 {
     public static void main(String[] args) {
         double quanthoras, valorhoras, percdesc, líquido, bruto, salário;
         int dependentes;
+        
         quanthoras = Float.parseFloat(JOptionPane.showInputDialog(null, "Insira a quantidade de horas trabalhadas"));
         valorhoras = Float.parseFloat(JOptionPane.showInputDialog(null, "Insira o valor por horas trabalhadas"));
         percdesc = Float.parseFloat(JOptionPane.showInputDialog(null, "Insira a porcentagem de desconto"));

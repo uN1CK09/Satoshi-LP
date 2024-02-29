@@ -5,6 +5,7 @@ import javax.swing.JOptionPane;
 public class Lt01_DecEx27 {
     public static void main(String[] args) {
         int voltas, exten, tempo, vel;
+        
         voltas = Integer.parseInt(JOptionPane.showInputDialog(null,"Insira a quantidade de voltas"));
         exten = Integer.parseInt(JOptionPane.showInputDialog(null,"Insira o tamanho do circuito(em metros)"));
         tempo = Integer.parseInt(JOptionPane.showInputDialog(null,"Insira o tempo de duração(em minutos)"));

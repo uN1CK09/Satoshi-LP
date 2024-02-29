@@ -6,6 +6,7 @@ import javax.swing.JOptionPane;
 public class Lt01_DecEx18 {
     public static void main(String[] args) {
         int num1, num2, dif;
+        
         num1 = Integer.parseInt(JOptionPane.showInputDialog(null,"Insira o valor do primeiro número"));
         num2 = Integer.parseInt(JOptionPane.showInputDialog(null,"Insira o valor do segundo número"));
         

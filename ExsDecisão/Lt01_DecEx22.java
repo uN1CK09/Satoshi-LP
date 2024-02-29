@@ -5,6 +5,7 @@ import javax.swing.JOptionPane;
 public class Lt01_DecEx22 {
     public static void main(String[] args) {
         int num1, num2;
+        
         num1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Insira o valor do primeiro número"));
         num2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Insira o valor do segundo número"));
         
