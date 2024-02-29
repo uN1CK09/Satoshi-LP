@@ -14,19 +14,19 @@ public class Lt01_DecEx23 {
         
         if (v4<v1) {
                 JOptionPane.showMessageDialog(null,"Ordem crescente: " + v4 + "," + v1 + "," + v2 + "," + v3);
-            }
+        }
         else {
                 if(v4<v2 && v4>v1) {
                         JOptionPane.showMessageDialog(null,"Ordem crescente: " + v1 + "," + v4 + "," + v2 + "," + v3);
-                    }
+                }
                 else {
                         if (v4<v3 && v4>v2) {
                                 JOptionPane.showMessageDialog(null,"Ordem crescente: " + v1 + "," + v2 + "," + v4 + "," + v3);
-                            }
+                        }
                         else {
                                 JOptionPane.showMessageDialog(null,"Ordem crescente: " + v1 + "," + v2 + "," + v3 + "," + v4);
-                            }
-                    }
-            }
+                        }
+                }
+        }
     }
 }

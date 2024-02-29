@@ -9,9 +9,9 @@ public class Lt01_DecEx24 {
 
         if (num % 2 == 0 && num % 2 == 0) {
                 JOptionPane.showMessageDialog(null, "O número é divisível por 2 e 3" + "\n" + "Valor: " + num);
-            }
+        }
         else {
                 JOptionPane.showMessageDialog(null,"O número não é divisível por 2 e 3" + "\n" + "Valor: " + num);
-            }
+        }
     }
 }

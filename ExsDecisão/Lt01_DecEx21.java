@@ -18,17 +18,17 @@ public class Lt01_DecEx21 {
         
         if (media>=6) {
                 JOptionPane.showMessageDialog(null, "Média: " + media + "\n" + "APROVADO");
-            }
+        }
         else {
                 if (media>=3 && media<6) {
                         JOptionPane.showMessageDialog(null, "Média: " + media + "\n" + "EXAME");
-                    }
+                }
                 else {
                         if (media<3) 
                             {
                                 JOptionPane.showMessageDialog(null, "Média: " + media + "\n" + "RETIDO");    
-                            }
-                    }
-            }
+                        }
+                }
+        }
     }
 }

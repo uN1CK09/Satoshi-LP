@@ -13,10 +13,10 @@ public class Lt01_DecEx18 {
         if (num1 > num2) {
             dif = (num1 - num2);
             JOptionPane.showMessageDialog(null, "Diferença: " + dif);
-            }
+        }
         else {
                 dif = (num2 - num1);
                 JOptionPane.showMessageDialog(null, "Diferença: " + dif);
-            }
+        }
     }
 }

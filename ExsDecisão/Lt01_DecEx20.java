@@ -18,20 +18,20 @@ public class Lt01_DecEx20 {
             if (delta < 0) {
                     JOptionPane.showMessageDialog(null, "Não existem raízes reais" + "\n" + "Delta = 0");
                     //System.exit(0);  -- comando para sair do programa
-                }
+            }
             else {
                     if (delta == 0)
                         {
                             x1 = (-B + delta)/(2*A);
                             JOptionPane.showMessageDialog(null, "Existe uma raiz real:" + "\n" + "Raiz = " + x1);
-                        }
+                    }
                     else
                         {
                             x1 = (-B - delta)/(2*A);
                             x2 = (-B + delta)/(2*A);
                             JOptionPane.showMessageDialog(null, "Existem duas raízes reais:" + "\n" + "Raiz 1 = " + x1);
                             JOptionPane.showMessageDialog(null, "Existem duas raízes reais:" + "\n" + "Raiz 1 = " + x2);
-                        }
-                }
+                    }
+            }
     }
 }

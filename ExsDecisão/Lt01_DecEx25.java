@@ -16,19 +16,19 @@ public class Lt01_DecEx25 {
         if (minj >= 60) {
                 minj = minj - 60;
                 horaj++;    
-            }
-        if (minj < 0) {
-                minj = minj + 60;
-            }
+        }
+        else if (minj < 0) {
+                minj += 60;
+        }
         horaj = horaj + (horaf-hora0);
         if (horaj < 0) {
-                horaj = horaj + 24;
-            }
+                horaj += 24;
+        }
         if (horaj >= 24) {
                 JOptionPane.showMessageDialog(null,"Tempo de jogo ultrapassa o limite");
-            }
+        }
         else {
                 JOptionPane.showMessageDialog(null,"Tempo de jogo: " + horaj + "h" + minj + "min");
-            }
+        }
     } 
 }

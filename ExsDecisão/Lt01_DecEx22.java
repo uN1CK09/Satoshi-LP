@@ -11,14 +11,14 @@ public class Lt01_DecEx22 {
         
         if (num1==num2) {
                 JOptionPane.showMessageDialog(null,"Valores iguais");
-            }
+        }
         else {
                 if (num1 > num2) {
                         JOptionPane.showMessageDialog(null, "Valores em ordem crescente:" + "\n" + num2 + ", " + num1);
-                    }
+                }
                 else {
                         JOptionPane.showMessageDialog(null, "Valores em ordem crescente:" + "\n" + num1 + ", " + num2);
-                    }    
-            }
+                }    
+        }
     }
 }

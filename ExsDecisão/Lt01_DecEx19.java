@@ -12,9 +12,9 @@ public class Lt01_DecEx19 {
         
         if (num1 > num2) {
                 JOptionPane.showMessageDialog(null, "Maior valor: " + num1);
-            }
+        }
         else {
                 JOptionPane.showMessageDialog(null, "Maior valor: " + num2);
-            }
+        }
     }    
 }
