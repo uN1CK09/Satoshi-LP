@@ -13,7 +13,7 @@ public class Lt01_DecEx25 {
         
         horaj = 0; //inicialização
         minj = minf - min0;
-        if (minj > 60) {
+        if (minj >= 60) {
                 minj = minj - 60;
                 horaj++;    
             }

@@ -20,7 +20,7 @@ public class Lt01_RepEx30 {
         diasidade = diaA -  diaN;
         mesidade = mesA - mesN;
         if (mesidade < 0){
-            mesidade = mesidade + 12;
+            mesidade += 12;
         }
 
         if (anoA % 4 == 0 && mesA == 02 &&  diaA > 28) {
