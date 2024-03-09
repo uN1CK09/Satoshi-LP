@@ -9,17 +9,23 @@ public class Lt01_RepEx40 {
         num1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Insira o primeiro valor inteiro"));
         num2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Insira o segundo valor inteiro"));
 
-//        for (inc = num1; inc <= num2; inc++){
-//            for (int i = 2; i <= inc; i++){
-//                if (inc % i == 0){
-//                    if (inc == 2){
-//                        System.out.println(inc);
-//                    }
-//                }
-//                else{
-//                    System.out.println(inc);
-//                }
-//            }
-//        }
+        for (inc = num1; inc <= num2; inc++){
+            if (inc <= 1){
+                continue;
+            }
+            if (inc <= 3){
+                System.out.println(inc);
+                continue;
+            }
+            if (inc % 2 == 0 || inc % 3 == 0 || inc % 5 == 0 || inc % 7 == 0){
+                continue;
+            }
+            for (int i = 2; i * i <= inc; i++) {
+                if (inc % i == 0 || inc % (i+2) == 0){
+                    break;
+                }
+            }
+            System.out.println(inc);
+        }
     }
 }
