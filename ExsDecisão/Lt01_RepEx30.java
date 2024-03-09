@@ -1,6 +1,6 @@
 //Receba a data de nascimento e atual em ano, mês e dia. Calcule e mostre a idade em anos, meses e dias, considerando os anos bissextos.
 
-package ExsRepetição;
+package ExsDecisão;
 import javax.swing.JOptionPane;
 public class Lt01_RepEx30 {
     public static void main (String [] arg){
