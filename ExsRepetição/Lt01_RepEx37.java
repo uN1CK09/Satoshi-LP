@@ -11,7 +11,6 @@ public class Lt01_RepEx37 {
         for (inc = 0; inc < num; inc++){
             resul = v1 + v2;
             
-
             v2 = v1;
             v1 = resul;
             System.out.println("Termo " + (inc + 1) + ": " + resul);

@@ -9,7 +9,7 @@ public class Lt01_RepEx38 {
         maior = 0;
         menor = 99999;
 
-        for (inc = 0; inc < 5; inc++){
+        for (inc = 0; inc < 100; inc++){
             num = Integer.parseInt(JOptionPane.showInputDialog(null, "Insira um valor inteiro"));
             if (num > maior){
                 maior = num;
