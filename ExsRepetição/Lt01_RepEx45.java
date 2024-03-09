@@ -2,11 +2,13 @@
 package ExsRepetição;
 public class Lt01_RepEx45 {
     public static void main(String[] args) {
-        double inc, calc;
+        double inc, calc, soma = 0;
 
         for (inc = 1; inc <= 15; inc++){
             calc = (inc/(inc*inc));
             System.out.println(inc + " / " + (inc*inc) + " = " + calc);
+            soma += calc;
         }
+        System.out.println("Soma da série: " + soma);
     }
 }
