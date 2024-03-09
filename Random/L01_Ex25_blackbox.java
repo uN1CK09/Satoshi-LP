@@ -1,7 +1,7 @@
 package Random;
 import javax.swing.JOptionPane;
 
-public class L01_Ex25 {
+public class L01_Ex25_blackbox {
     public static void main(String[] args) {
         int hi, mi, hf, mf, dhora = 0, dmin = 0;
 
