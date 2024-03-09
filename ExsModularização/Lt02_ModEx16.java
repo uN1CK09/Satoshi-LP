@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 public class Lt02_ModEx16 {
     static double quanthoras, valorhoras, percdesc, liquido;
     static int dependentes;
-        public static void main(String[] args) {
+    public static void main(String[] args) {
         
             quanthoras = Float.parseFloat(JOptionPane.showInputDialog(null, "Insira a quantidade de horas trabalhadas"));
             valorhoras = Float.parseFloat(JOptionPane.showInputDialog(null, "Insira o valor por horas trabalhadas"));
