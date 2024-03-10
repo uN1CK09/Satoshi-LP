@@ -4,7 +4,7 @@ package ExsDecisão;
 import javax.swing.JOptionPane;
 public class Lt01_DecEx25 {
     public static void main(String[] args) {
-        int hora0, horaf, min0, minf, horaj = -1, minj;
+        int hora0, horaf, min0, minf, horaj = 0, minj;
             
         hora0 = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite a hora de início do jogo"));  
         min0 = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o minuto de início do jogo"));  
@@ -18,6 +18,7 @@ public class Lt01_DecEx25 {
         }
         else if (minj < 0) {
                 minj += 60;
+                horaj--;
         }
         horaj = horaj + (horaf-hora0);
         if (horaj < 0) {
