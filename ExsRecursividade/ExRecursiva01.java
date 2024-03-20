@@ -1,3 +1,4 @@
+// Serie1 = (1+2+3+...+100)
 package ExsRecursividade;
 
 public class ExRecursiva01 {

@@ -1,3 +1,4 @@
+// Serie2 = (N) + (N-1) + (N-2) + ... + (1)
 package ExsRecursividade;
 import javax.swing.JOptionPane;
 public class ExRecursiva02 {

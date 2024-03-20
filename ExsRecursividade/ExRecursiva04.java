@@ -1,3 +1,4 @@
+// Serie4 = (N/1) +(N-1 / 2 ) + (N-2 / 3) + .... + (1/N) 
 package ExsRecursividade;
 import javax.swing.JOptionPane;
 public class ExRecursiva04 {

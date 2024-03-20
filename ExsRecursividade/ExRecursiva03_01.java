@@ -1,7 +1,7 @@
 // Serie3 = (1/1) + (1/2) + (1/3) + ....+ (1/N) 
 package ExsRecursividade;
 import javax.swing.JOptionPane;
-public class ExRecursiva03 {
+public class ExRecursiva03_01 {
     public static void main(String[] args) {
         float num;
 
@@ -10,12 +10,13 @@ public class ExRecursiva03 {
     }
     
     public static float FuncSerie03(float n){
-        if (n > 1){
-            float div = (1/n);
-            return div + FuncSerie03(n-1);
+        float calc;
+        if (n == 1){
+            return n;
         }
         else{
-            return n;
+            calc = (1/n) + FuncSerie03(n-1);
+            return calc;
         }
     }
 }
