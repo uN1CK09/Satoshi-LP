@@ -9,6 +9,6 @@ public class Lt01_SeqEx13 {
         quantidade = Integer.parseInt(JOptionPane.showInputDialog(null, "Insira a quantidade de comida em quilos"));
         duracao = (quantidade*1000)/50;
         
-        JOptionPane.showMessageDialog(null,"A quantidade de comida durará: " + duracao + " dias");;
+        JOptionPane.showMessageDialog(null,"A quantidade de comida durará: " + duracao + " dias");
     }    
 }
