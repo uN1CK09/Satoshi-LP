@@ -1,3 +1,5 @@
+//Receba 2 números inteiros. Verifique e mostre todos os números primos existentes entre eles.
+// Versão bem feita
 package ExsRepetição;
 import javax.swing.JOptionPane;
 public class lt01_RepEx40_01 {
