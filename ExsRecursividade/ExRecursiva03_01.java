@@ -1,4 +1,5 @@
-// Serie3 = (1/1) + (1/2) + (1/3) + ....+ (1/N) 
+// Serie3 = (1/1) + (1/2) + (1/3) + ....+ (1/N)
+// Pós correção
 package ExsRecursividade;
 import javax.swing.JOptionPane;
 public class ExRecursiva03_01 {
