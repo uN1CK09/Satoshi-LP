@@ -3,7 +3,7 @@ package ExsVetorMatriz;
 import javax.swing.JOptionPane;
 public class lt03_VetEx06 {
     public static void main(String[] args) {
-        int vetor[] = new int[5];
+        int vetor[] = new int[20];
         
         Carregar(vetor);
         vetor = BubbleSort(vetor);
