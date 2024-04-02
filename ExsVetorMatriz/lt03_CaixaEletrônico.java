@@ -6,6 +6,7 @@ public class lt03_CaixaEletrônico {
         int opc = 0;
         int vetornotas[] = new int[6];
 
+        //Menu Principal
         while (opc != 9){
             opc = Integer.parseInt(JOptionPane.showInputDialog("1 - Carregar Notas no caixa \n 2 - Retirar Notas \n 3 - Estatísica \n 9 - Finalizar"));
 
@@ -15,9 +16,13 @@ public class lt03_CaixaEletrônico {
                     break;
                 case 2:
                     vetornotas = RetirarNotas(vetornotas);
+                    somanotas = FuncSomaNotas(vetornotas);
+                    if(somanotas <= 0){
+                        JOptionPane.showMessageDialog(null, "CAIXA ESGOTADO");
+                    }
                     break;
                 case 3:
-                    //Estatisticas();
+                    Estatisticas();
                     break;
                 case 9:
                     JOptionPane.showMessageDialog(null, "Programa finalizado");
@@ -53,17 +58,45 @@ public class lt03_CaixaEletrônico {
                     vt[i] = Integer.parseInt(JOptionPane.showInputDialog("Insira o valor de notas de 2 reais"));
                     break;
             }
-            somanotas += vt[i];
         }
+        
+        somanotas = FuncSomaNotas(vt);
+        
         return vt;
     }
 
     static int[] RetirarNotas(int vt[]){
         int saque = Integer.parseInt(JOptionPane.showInputDialog("Qual o valor desejado para saque?"));
+        int notas[] = new int[6];
 
         while(saque > 0){
-
+            for(int i = 0; i < 6; i++){
+                switch (i) {
+                    case 0:
+                        notas[i] = Integer.parseInt(JOptionPane.showInputDialog("Quantidade de notas de 100"));
+                        vt[i] -= notas[i];
+                        System.out.println("Notas de 100: " + notas);
+                        //notas *= 100;
+                        //saque -= notas;
+                        break;
+                
+                }
+            }
         }
         return vt;
+    }
+
+    static int FuncSomaNotas(int vt[]){
+        int soma = 0;
+
+        for(int inc = 0; inc < vt.length; inc++){
+            soma += vt[inc];
+        }
+
+        return soma;
+    }
+
+    static void Estatisticas(){
+
     }
 }
