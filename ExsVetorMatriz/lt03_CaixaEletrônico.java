@@ -19,12 +19,15 @@ public class lt03_CaixaEletrônico {
                 case 3:
                     Estatisticas();
                     break;
+                case 9:
+                    JOptionPane.showMessageDialog(null, "Programa finalizado");
+                    System.exit(0);
+                    break;
 
                 default:
                     JOptionPane.showMessageDialog(null,"OPÇÃO INVÁLIDA");
                     break;
             }
-            
         }
     }
 }
