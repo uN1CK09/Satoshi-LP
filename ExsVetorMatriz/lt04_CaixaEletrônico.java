@@ -78,6 +78,11 @@ public class lt04_CaixaEletrônico {
         banco = Integer.parseInt(JOptionPane.showInputDialog("Insira o código do seu banco \n1 - Banco do Brasil \n2 - Santander \n3 - Itaú \n4 - Caixa"));
         int saque = Integer.parseInt(JOptionPane.showInputDialog("Qual o valor desejado para saque?"));
         
+        if((saque - 3) % 10 == 0 || (saque - 1) % 10 == 0){
+            JOptionPane.showMessageDialog(null, "Valor inválido para saque. Repita o processo");
+            return vt;
+        }
+        
         if(saque > somatotalnotas){ //Verificação para o limite do caixa
             JOptionPane.showMessageDialog(null, "VALOR EXCEDEU O LIMITE DO CAIXA");
             return vt;
