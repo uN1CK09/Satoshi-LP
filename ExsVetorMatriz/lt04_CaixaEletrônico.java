@@ -269,7 +269,6 @@ public class lt04_CaixaEletrônico {
 
     static void Estatisticas(){    
         for(int x = 0; x < 4; x++){
-            //for(int y = 0; y < 5; y++){
                 switch(x){
                     case 0:
                         System.out.println("\nBanco do Brasil");
