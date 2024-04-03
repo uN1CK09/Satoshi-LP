@@ -1,7 +1,7 @@
 //Caixa eletrônico
 package ExsVetorMatriz;
 import javax.swing.JOptionPane;
-public class lt03_CaixaEletrônico {
+public class lt04_CaixaEletrônico {
     static int somatotalnotas = 0, retiradas = 0, banco;
     static float matrizbancos[][] = new float [4][5];
     public static void main(String[] args) {
