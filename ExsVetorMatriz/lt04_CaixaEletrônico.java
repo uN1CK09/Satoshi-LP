@@ -155,6 +155,10 @@ public class lt04_CaixaEletrônico {
                 }
                 switch (i) {
                     case 0:
+                        if(saque < 100){ //Notas possíveis
+                            break;
+                        }
+
                         if(vt[i] <= 0){ //Notas de 100 indisponíveis
                         JOptionPane.showMessageDialog(null,"Notas de 100 indisponíveis");
                         break;
@@ -167,6 +171,10 @@ public class lt04_CaixaEletrônico {
                         break;
 
                     case 1:
+                        if(saque < 50){ //Notas possíveis
+                            break;
+                        }
+                        
                         if(vt[i] <= 0){ //Notas de 50 indisponíveis
                         JOptionPane.showMessageDialog(null,"Notas de 50 indisponíveis");
                         break;
@@ -179,6 +187,10 @@ public class lt04_CaixaEletrônico {
                         break;
 
                     case 2:
+                        if(saque < 20){ //Notas possíveis
+                            break;
+                        }
+
                         if(vt[i] <= 0){ //Notas de 20 indisponíveis
                         JOptionPane.showMessageDialog(null,"Notas de 20 indisponíveis");
                         break;
@@ -191,6 +203,10 @@ public class lt04_CaixaEletrônico {
                         break;
 
                     case 3:
+                        if(saque < 10){ //Notas possíveis
+                            break;
+                        }    
+
                         if(vt[i] <= 0){ //Notas de 10 indisponíveis
                         JOptionPane.showMessageDialog(null,"Notas de 10 indisponíveis");
                         break;
@@ -203,6 +219,10 @@ public class lt04_CaixaEletrônico {
                         break;
 
                     case 4:
+                        if(saque < 5){ //Notas possíveis
+                            break;
+                        }    
+
                         if(vt[i] <= 0){ //Notas de 5 indisponíveis
                         JOptionPane.showMessageDialog(null,"Notas de 5 indisponíveis");
                         break;
