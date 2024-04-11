@@ -1,5 +1,5 @@
 //Caixa eletrônico
-
+package ExsVetorMatriz;
 import javax.swing.JOptionPane;
 public class lt04_CaixaEletrônico {
     static int somatotalnotas = 0, retiradas = 0, banco;
