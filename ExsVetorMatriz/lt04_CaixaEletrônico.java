@@ -75,7 +75,28 @@ public class lt04_CaixaEletrônico {
     }
 
     static int[] RetirarNotas(int vt[]){
-        banco = Integer.parseInt(JOptionPane.showInputDialog("Insira o código do seu banco \n1 - Banco do Brasil \n2 - Santander \n3 - Itaú \n4 - Caixa"));
+        boolean codbanco = false;
+        while(codbanco == false){
+            banco = Integer.parseInt(JOptionPane.showInputDialog("Insira o código do seu banco \n1 - Banco do Brasil \n2 - Santander \n3 - Itaú \n4 - Caixa"));
+            
+            switch (banco) {
+                case 1:
+                    codbanco = true;
+                    break;
+                case 2:
+                    codbanco = true;
+                    break;
+                case 3:
+                    codbanco = true;
+                    break;
+                case 4:
+                    codbanco = true;
+                    break;
+                default:
+                    JOptionPane.showMessageDialog(null, "Banco inválido");
+                    break;
+            }
+        }
         int saque = Integer.parseInt(JOptionPane.showInputDialog("Qual o valor desejado para saque?"));
         
         /*
