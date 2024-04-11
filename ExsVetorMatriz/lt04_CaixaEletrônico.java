@@ -169,16 +169,16 @@ public class lt04_CaixaEletrônico {
                         break;
                         }
                     
-                        notas[i] += Integer.parseInt(JOptionPane.showInputDialog("Quantidade de notas de 100 reais"));
+                        notas[i] = Integer.parseInt(JOptionPane.showInputDialog("Quantidade de notas de 100 reais"));
                         reduc = notas[i] * 100;
-                        vt[i] -= notas[i]; //Atualiza notas disponíveis no caixa
                         
                         if(reduc > saque){
                             JOptionPane.showMessageDialog(null, "Notas excedem o valor do saque");
                             i--;
                             break;
                         }
-
+                        
+                        vt[i] -= notas[i]; //Atualiza notas disponíveis no caixa
                         saque -= reduc; 
                         break;
 
@@ -192,16 +192,16 @@ public class lt04_CaixaEletrônico {
                         break;
                         }
                         
-                        notas[i] += Integer.parseInt(JOptionPane.showInputDialog("Quantidade de notas de 50 reais"));
+                        notas[i] = Integer.parseInt(JOptionPane.showInputDialog("Quantidade de notas de 50 reais"));
                         reduc = notas[i] * 50;
-                        vt[i] -= notas[i]; //Atualiza notas disponíveis no caixa
                         
                         if(reduc > saque){
                             JOptionPane.showMessageDialog(null, "Notas excedem o valor do saque");
                             i--;
                             break;
                         }
-
+                        
+                        vt[i] -= notas[i]; //Atualiza notas disponíveis no caixa
                         saque -= reduc;
                         break;
 
@@ -217,7 +217,6 @@ public class lt04_CaixaEletrônico {
 
                         notas[i] = Integer.parseInt(JOptionPane.showInputDialog("Quantidade de notas de 20 reais"));
                         reduc = notas[i] * 20;
-                        vt[i] -= notas[i]; //Atualiza notas disponíveis no caixa
                         
                         if(reduc > saque){
                             JOptionPane.showMessageDialog(null, "Notas excedem o valor do saque");
@@ -225,6 +224,7 @@ public class lt04_CaixaEletrônico {
                             break;
                         }
                         
+                        vt[i] -= notas[i]; //Atualiza notas disponíveis no caixa
                         saque -= reduc;
                         break;
 
@@ -240,7 +240,6 @@ public class lt04_CaixaEletrônico {
 
                         notas[i] = Integer.parseInt(JOptionPane.showInputDialog("Quantidade de notas de 10 reais"));
                         reduc = notas[i] * 10;
-                        vt[i] -= notas[i]; //Atualiza notas disponíveis no caixa
                         
                         if(reduc > saque){
                             JOptionPane.showMessageDialog(null, "Notas excedem o valor do saque");
@@ -248,6 +247,7 @@ public class lt04_CaixaEletrônico {
                             break;
                         }
                         
+                        vt[i] -= notas[i]; //Atualiza notas disponíveis no caixa
                         saque -= reduc;
                         break;
 
@@ -263,7 +263,6 @@ public class lt04_CaixaEletrônico {
 
                         notas[i] = Integer.parseInt(JOptionPane.showInputDialog("Quantidade de notas de 5 reais"));
                         reduc = notas[i] * 5;
-                        vt[i] -= notas[i]; //Atualiza notas disponíveis no caixa
                         
                         if(reduc > saque){
                             JOptionPane.showMessageDialog(null, "Notas excedem o valor do saque");
@@ -271,6 +270,7 @@ public class lt04_CaixaEletrônico {
                             break;
                         }
                         
+                        vt[i] -= notas[i]; //Atualiza notas disponíveis no caixa
                         saque -= reduc;
                         break;
 
@@ -282,14 +282,14 @@ public class lt04_CaixaEletrônico {
 
                         notas[i] = Integer.parseInt(JOptionPane.showInputDialog("Quantidade de notas de 2 reais"));
                         reduc = notas[i] * 2;
-                        vt[i] -= notas[i]; //Atualiza notas disponíveis no caixa
                         
                         if(reduc > saque){
                             JOptionPane.showMessageDialog(null, "Notas excedem o valor do saque");
                             i--;
                             break;
                         }
-
+                        
+                        vt[i] -= notas[i]; //Atualiza notas disponíveis no caixa
                         saque -= reduc;
                         break;
                 }
