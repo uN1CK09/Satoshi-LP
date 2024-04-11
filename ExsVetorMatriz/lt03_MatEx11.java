@@ -12,10 +12,23 @@ public class lt03_MatEx11 {
                 }
             }
         }
+
+        for (x = 0; x < 8; x++){
+            for (y = 0; y < 8; y++){
+                System.out.print(+mat[x][y]+" ");
+            }
+            System.out.println();
+
+         }
+
+
+       /*  
         for (x = 0; x < 8; x++){
             for (y = 0; y < 8; y++){
                 System.out.println("Matriz [" + x + "][" + y + "] = " + mat[x][y]);
             }
-        }
+         }
+       */
+      
     }
 }
