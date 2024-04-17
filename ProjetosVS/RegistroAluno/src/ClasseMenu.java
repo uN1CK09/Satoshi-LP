@@ -4,7 +4,7 @@ public class ClasseMenu {   //  CLASSE PRINCIPAL
 public static void main ( String[] args ){
     // INSTÂNCIA DA CLASSE ABSTRATA COM 3 REGISTROS TIPO VETOR 
     Aluno[] sala = new Aluno[3]; 
-    
+
     // INSTÂNCIA DA CLASSE MÉTODOS
     ClasseMetodos m = new ClasseMetodos();
     
@@ -15,7 +15,7 @@ public static void main ( String[] args ){
     }
     int opc = 0;
     while (opc!=9){
-      opc = Integer.parseInt(JOptionPane.showInputDialog("1 -  Cadastra Alunos \n2 - Consulta Registros \n9 - Finaliza"));
+      opc = Integer.parseInt(JOptionPane.showInputDialog("1 - Cadastra Alunos \n2 - Consulta Registros \n9 - Finaliza"));
       switch (opc){
         case 1:  sala = m.FCadastra(sala); // CHAMADA FUNÇÃO
           break;
