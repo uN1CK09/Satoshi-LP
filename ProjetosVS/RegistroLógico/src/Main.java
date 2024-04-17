@@ -1,15 +1,10 @@
 //Main - Registro Lógico - Entendimento
-
 import javax.swing.JOptionPane;
-
 public class Main {
     public static void main(String[] args) {
         Metodos m = new Metodos();
 
-        Celular[] cel = new Celular[3];
-        for(int i = 0; i < 3; i++){
-            cel[i] = new Celular();
-        }
+        Celular cel = new Celular();
         
         int opc = 0;
         while(opc != 9){
@@ -25,9 +20,6 @@ public class Main {
                     JOptionPane.showMessageDialog(null,"OPÇÃO INVÁLIDA");
                     break;
             }
-
         }
-
     }
-
 }
