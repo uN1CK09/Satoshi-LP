@@ -11,11 +11,13 @@ public class ClasseMetodos {
     }
 
     public void ConsultaQtd(Estatisticas[] Estatisticas){
+        System.out.println("*Cidades com quantidade de acidentes entre 100 e 500*");
         for(int i = 0; i < 9; i++){
             if(Estatisticas[i].QtdAcidentes > 100 && Estatisticas[i].QtdAcidentes < 500){
-                System.out.println("Código da cidade: "+Estatisticas[i].CodCidade + "\nNome da cidade: " + Estatisticas[i].NomeCidade + "\nQuantidade de acidentes: " + Estatisticas[i].QtdAcidentes);
+                System.out.println("\nCódigo da cidade: "+Estatisticas[i].CodCidade + "\nNome da cidade: " + Estatisticas[i].NomeCidade + "\nQuantidade de acidentes: " + Estatisticas[i].QtdAcidentes);
             }
         }
+        System.out.println("**********************");
         return;
     }
 
@@ -36,8 +38,28 @@ public class ClasseMetodos {
                 indMaior = i;
             }
         }
-        System.out.println("Menor quantidade de acidentes" + "Código da cidade: "+Estatisticas[indMenor].CodCidade + "\nNome da cidade: " + Estatisticas[indMenor].NomeCidade + "\nQuantidade de acidentes: " + Estatisticas[indMenor].QtdAcidentes);
-        System.out.println("Maior quantidade de acidentes" + "Código da cidade: "+Estatisticas[indMaior].CodCidade + "\nNome da cidade: " + Estatisticas[indMaior].NomeCidade + "\nQuantidade de acidentes: " + Estatisticas[indMaior].QtdAcidentes);
+        //Menor Quantidade
+        System.out.println("\n*Menor quantidade de acidentes*" + "\nCódigo da cidade: "+Estatisticas[indMenor].CodCidade + "\nNome da cidade: " + Estatisticas[indMenor].NomeCidade + "\nQuantidade de acidentes: " + Estatisticas[indMenor].QtdAcidentes);
+        //Maior Quantidade
+        System.out.println("\n*Maior quantidade de acidentes*" + "\nCódigo da cidade: "+Estatisticas[indMaior].CodCidade + "\nNome da cidade: " + Estatisticas[indMaior].NomeCidade + "\nQuantidade de acidentes: " + Estatisticas[indMaior].QtdAcidentes);
+        System.out.println("**********************");
         return;
+    }
+
+    public void AcimaMedia(Estatisticas[] Estatisticas){
+        int media = 0;
+        for(int i = 0; i < 10; i++){
+            media += Estatisticas[i].QtdAcidentes;
+        }
+        
+        media /= 10; //Cálculo média
+        System.out.println("\nMédia de acidentes no ano: " + media + "\nCidades acima da média");
+        
+        for(int i = 0; i < 10; i++){
+            if(Estatisticas[i].QtdAcidentes > media){
+                System.out.println("\nCódigo da cidade: "+Estatisticas[i].CodCidade + "\nNome da cidade: " + Estatisticas[i].NomeCidade + "\nQuantidade de acidentes: " + Estatisticas[i].QtdAcidentes + "\n");
+            }
+        }
+        System.out.println("**********************");
     }
 }

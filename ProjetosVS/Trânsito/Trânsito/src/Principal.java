@@ -1,5 +1,4 @@
 import javax.swing.JOptionPane;
-
 public class Principal {
     public static void main(String[] args) {
         Estatisticas[] Stats = new Estatisticas[10];
@@ -16,13 +15,13 @@ public class Principal {
                     metodos.FuncReg(Stats);
                     break;
                 case 2: //Consulta por quantidade
-                    
+                    metodos.ConsultaQtd(Stats);
                     break;
                 case 3: //Maior e menor
-                    
+                    metodos.Maior_Menor(Stats);
                     break;
                 case 4: //Acidentes acima da média
-                    
+                    metodos.AcimaMedia(Stats);
                     break;
                 case 9:
                     JOptionPane.showMessageDialog(null, "Programa Finalizado");
