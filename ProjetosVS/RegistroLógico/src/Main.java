@@ -16,6 +16,10 @@ public class Main {
                 case 2:
                     m.ConsultaReg(cel);
                     break;
+                case 9:
+                    JOptionPane.showMessageDialog(null,"Programa finalizado");
+                    System.exit(0);
+                    break;
                 default:
                     JOptionPane.showMessageDialog(null,"OPÇÃO INVÁLIDA");
                     break;
