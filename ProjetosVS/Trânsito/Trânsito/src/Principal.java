@@ -4,7 +4,7 @@ public class Principal {
         Estatisticas[] Stats = new Estatisticas[10];
         ClasseMetodos metodos = new ClasseMetodos();
 
-        for(int i = 0; i < 10; i++){
+        for(int i = 0; i < Stats.length; i++){
             Stats[i] = new Estatisticas();
         }
         int opc = 0;
