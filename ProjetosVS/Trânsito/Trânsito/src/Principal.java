@@ -28,7 +28,7 @@ public class Principal {
                     System.exit(0);
                     break;
                 default:
-                    JOptionPane.showMessageDialog(null, "");
+                    JOptionPane.showMessageDialog(null, "OPÇÃO INVÁLIDA");
                     break;
             }
         }
