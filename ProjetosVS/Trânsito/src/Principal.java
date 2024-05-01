@@ -2,7 +2,7 @@ import java.io.IOException;
 import javax.swing.JOptionPane;
 public class Principal {
     public static void main(String[] args) throws IOException {
-        Estatisticas[] Cidades = new Estatisticas[2];
+        Estatisticas[] Cidades = new Estatisticas[10];
         ClasseMetodos metodos = new ClasseMetodos();
 
         for(int i = 0; i < Cidades.length; i++){
