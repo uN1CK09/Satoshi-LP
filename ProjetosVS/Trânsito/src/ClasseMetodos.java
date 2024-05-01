@@ -4,9 +4,12 @@ public class ClasseMetodos {
     public Estatisticas[] FuncReg(Estatisticas[] Cidades) throws IOException {
         String file = "Registro_Trânsito.txt";
         BufferedWriter  escrita = new BufferedWriter(new FileWriter(file));
-
         for(int i = 0; i < Cidades.length; i++){
             Cidades[i].CodCidade = Integer.parseInt(JOptionPane.showInputDialog("Insira o código da cidade " + (i+1) + ": "));
+            if(Cidades[i].CodCidade == 0){
+                escrita.close();
+                return Cidades;
+            }
             escrita.write(Integer.toString(Cidades[i].CodCidade)); //Escreve o campo no arquivo
             escrita.newLine(); //Nova linha
 
@@ -77,7 +80,9 @@ public class ClasseMetodos {
     }
 
     public void LerArquivo(Estatisticas[] Cidades) throws IOException{
-        String file = "Registro_Trânsito.txt";
+        String Dir = System.getProperty("user.dir");
+        System.out.println(Dir+"\n");
+        String file = Dir + "/ProjetosVS/Trânsito/Registro_Trânsito.txt";
         BufferedReader leitura = new BufferedReader(new FileReader(file));
         
         for(int i = 0; i < Cidades.length; i++){
