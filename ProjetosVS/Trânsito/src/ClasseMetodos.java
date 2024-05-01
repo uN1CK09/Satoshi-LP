@@ -80,9 +80,7 @@ public class ClasseMetodos {
     }
 
     public void LerArquivo(Estatisticas[] Cidades) throws IOException{
-        String Dir = System.getProperty("user.dir");
-        System.out.println(Dir+"\n");
-        String file = Dir + "/ProjetosVS/Trânsito/Registro_Trânsito.txt";
+        String file = "Registro_Trânsito.txt";
         BufferedReader leitura = new BufferedReader(new FileReader(file));
         
         for(int i = 0; i < Cidades.length; i++){
