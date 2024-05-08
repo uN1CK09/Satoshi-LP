@@ -12,7 +12,7 @@ public class Controller {
         
         int opc = 0;
         while(opc != 9){
-            opc = Integer.parseInt(JOptionPane.showInputDialog("SISTEMA DE VOTAÇÃO \n1 - Carregar Seção/Número Eleitor \n2 - Classificar por Seção \n3 - Gravar Registros \n4 - Mostrar indicadores \n9 - Finalizar"));
+            opc = Integer.parseInt(JOptionPane.showInputDialog("SISTEMA DE VOTAÇÃO \n1 - Carregar Seção/Número Eleitor \n2 - Classificar por Seção \n3 - Gravar Registros \n4 - Mostrar indicadores \n5 - Ler Registro \n9 - Finalizar"));
             
             switch (opc) {
                 case 1: // Cadastro
@@ -26,6 +26,9 @@ public class Controller {
                     break;
                 case 4: // Indicadores
                     menu.segundoMenu(eleitores);
+                    break;
+                case 5: // Ler registro
+                    met.lerRegistro(eleitores);
                     break;
                 case 9: // Fim
                     JOptionPane.showMessageDialog(null, "Finalizando programa");

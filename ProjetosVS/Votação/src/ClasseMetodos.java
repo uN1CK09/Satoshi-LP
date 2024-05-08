@@ -162,4 +162,20 @@ public class ClasseMetodos {
         }
         return;
     }
+
+    public void lerRegistro(votacao[] eleitores)throws IOException{
+        String file = "Votação2024.txt";
+        BufferedReader read = new BufferedReader(new FileReader(file));
+
+        for(int i = 0; i < eleitores.length; i++){
+            eleitores[i] = new votacao();
+        }
+
+        for(int i = 0; i < eleitores.length; i++){
+            eleitores[i].NumeroSecao = Integer.parseInt(read.readLine());
+            eleitores[i].NumeroCandidato = Integer.parseInt(read.readLine());
+        }
+        read.close();
+        return;
+    }
 }
