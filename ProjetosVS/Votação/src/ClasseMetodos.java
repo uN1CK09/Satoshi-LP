@@ -73,7 +73,7 @@ public class ClasseMetodos {
         //Print Eleitores
         System.out.println("\nEleitores por seção");
         for(int i = 0; i < EleitoresPorSecao.length; i++){
-            System.out.println("Seção: " + i + "\nQuantidade de eleitores: " + EleitoresPorSecao[i]);
+            System.out.println("Seção: " + i + " - Quantidade de eleitores: " + EleitoresPorSecao[i]);
         }
         
         return;
@@ -98,8 +98,8 @@ public class ClasseMetodos {
                 indMenor = i;
             } 
         }
-        System.out.println("\nSeção com maior número de eleitores: " + indMaior + "\nQuantidade de eleitores: " + maior);
-        System.out.println("Seção com menor número de eleitores: " + indMenor + "\nQuantidade de eleitores: " + menor);
+        System.out.println("\nSeção com maior número de eleitores: " + indMaior + " - Quantidade de eleitores: " + maior);
+        System.out.println("Seção com menor número de eleitores: " + indMenor + " - Quantidade de eleitores: " + menor);
         return;
         
     }
@@ -120,14 +120,46 @@ public class ClasseMetodos {
         //Print votos
         System.out.println("\nVotos por candidatos");
         for(int i = 0; i < votos.length; i++){
-            System.out.println("Candidato: " + i + "\nQuantidade de votos: " + votos[i]);
+            System.out.println("Candidato: " + i + " - Quantidade de votos: " + votos[i]);
         } 
         return;
     }
     
+    static int[][] funcBubbleSortMatriz(int mat[][]){
+        int aux, aux2;
+        for(int i = 0; i < mat[0].length; i++){
+            for(int j = 0; j < mat[0].length - 1; j++){
+                if(mat[1][j] > mat[1][j+1]){
+                    aux = mat[1][j];
+                    mat[1][j] = mat[1][j+1];
+                    mat[1][j+1] = aux;
+
+                    aux2 = mat[0][j];
+                    mat[0][j] = mat[0][j+1];
+                    mat[0][j+1] = aux2;
+                }
+            }
+        }
+        return mat;
+    }
+
     public void candidatosMaisVotados(votacao[] eleitores) throws IOException{
-        //TODO: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        //Ideia = Matriz [300][2] para alocar os vetores nela e ordernar preservando o índice
+        int matrizMaisVotados[][] = new int[2][300];
+        int votos[] = new int[300];
+        votos = contagemDeVotos(eleitores);
+
+        matrizMaisVotados[1] = votos;
+        int z = 0;
+        for(int i = 0; i < matrizMaisVotados[0].length; i++){
+            matrizMaisVotados[0][i] = z; 
+            z++;
+        }
+        matrizMaisVotados = funcBubbleSortMatriz(matrizMaisVotados);
+
+        System.out.println("\nCandidatos mais votados");
+        for(int i = matrizMaisVotados[0].length - 1; i > matrizMaisVotados[0].length - 11; i--){
+            System.out.println("Candidato: " + matrizMaisVotados[0][i] + " Votos: " + matrizMaisVotados[1][i]);
+        }
         return;
     }
 }
