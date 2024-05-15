@@ -19,7 +19,7 @@ public class MenuEstatistica {
 
             switch (opc) {
                 case 1: //Vencedor
-                    statMet.Vencedor(apuracao);
+                    statMet.vencedor(apuracao);
                     break;
                 case 2: //Segundo colocado
                     break;
@@ -31,8 +31,7 @@ public class MenuEstatistica {
                     break;
                 case 6: //Mostra Apuração
                     break;
-                case 9: 
-                    JOptionPane.showMessageDialog(null, "Retornando");
+                case 9:
                     return;
                 default:
                     JOptionPane.showMessageDialog(null, "Opção inválida");

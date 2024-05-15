@@ -1,16 +1,8 @@
 import java.io.IOException;
 import javax.swing.JOptionPane;
 public class Principal {
-    public static int vetorSecoes[] = new int[6];
+    public static int vetorSecoes[] = {1, 3, 4, 5, 9, 10};
     public static void main(String[] args) throws IOException {
-        //Inicialização do vetor de seções
-        vetorSecoes[0] = 1;
-        vetorSecoes[1] = 3;
-        vetorSecoes[2] = 4;
-        vetorSecoes[3] = 5;
-        vetorSecoes[4] = 9;
-        vetorSecoes[5] = 10;
-        
         //Instâncias e objetos
         MetodosPrincipais metodo = new MetodosPrincipais();
         MenuEstatistica menu = new MenuEstatistica();
@@ -59,15 +51,15 @@ public class Principal {
                 case 2: //Cadastra Votação
                     int opc2 = 0;
                     while (opc2 != 9) {
-                        opc = Integer.parseInt(JOptionPane.showInputDialog(menu2));
+                        opc2 = Integer.parseInt(JOptionPane.showInputDialog(menu2));
                         switch(opc2){
-                            case 1:
-                                metodo.cadastraVotos(votacao2, cadastro, opc2);
+                            case 1://Votação 1 - Cadastrada, ordenada e gravada
+                                votacao1 = metodo.cadastraVotos(votacao1, cadastro, opc2);
                                 break;
-                            case 2:
+                            case 2://Votação 2 - Cadastrada, ordenada e gravada
+                                votacao2 = metodo.cadastraVotos(votacao2, cadastro, opc2);
                                 break;
                             case 9:
-                                JOptionPane.showMessageDialog(null, "Retornando");
                                 break;
                             default:
                                 JOptionPane.showMessageDialog(null, "Opção inválida");
@@ -76,6 +68,7 @@ public class Principal {
                     }
                     break;
                 case 3: //Agrupa Apuração
+                    apuracao = metodo.agruparApuracao(apuracao, votacao1, votacao2);
                     break;
                 case 4: //Menu Estatísticas
                     menu.menuEstatistica(apuracao);

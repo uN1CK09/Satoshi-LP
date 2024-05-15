@@ -170,7 +170,7 @@ public class ClasseMetodos {
         for(int i = 0; i < eleitores.length; i++){
             eleitores[i] = new votacao();
         }
-
+        
         for(int i = 0; i < eleitores.length; i++){
             eleitores[i].NumeroSecao = Integer.parseInt(read.readLine());
             eleitores[i].NumeroCandidato = Integer.parseInt(read.readLine());
