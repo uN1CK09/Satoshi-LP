@@ -30,7 +30,7 @@ public class MetodosEstatisticas {
         }
 
         for(int i = 0; i < apuracao.length; i++){
-            auxCandidatos[apuracao[i].codCandidato].secao++; //Contagem de votos
+            auxCandidatos[apuracao[i].codCandidato-1].secao++; //Contagem de votos
         }
 
         auxCandidatos = bubbleSortSecao(auxCandidatos);
