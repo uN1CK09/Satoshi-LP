@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 public class MenuEstatistica {
-    public void menuEstatistica(Votacao[] apuracao){
+    public void menuEstatistica(Votacao[] apuracao, Eleitor[] eleitores){
         MetodosEstatisticas statMet = new MetodosEstatisticas();
 
         String stats = """
@@ -19,17 +19,22 @@ public class MenuEstatistica {
 
             switch (opc) {
                 case 1: //Vencedor
-                    statMet.vencedor(apuracao);
+                    statMet.classificacao(apuracao, opc);
                     break;
                 case 2: //Segundo colocado
+                    statMet.classificacao(apuracao, opc);
                     break;
                 case 3: //Quantidade de votos em branco
+                    statMet.votosBrancos(apuracao);
                     break;
                 case 4: //Quantidade de votos nulos
+                    statMet.votosNulos(apuracao);
                     break;
                 case 5: //Mostra Eleitores
+                    statMet.mostraEleitores(apuracao, eleitores);
                     break;
                 case 6: //Mostra Apuração
+                    statMet.votosApurados(apuracao);
                     break;
                 case 9:
                     return;

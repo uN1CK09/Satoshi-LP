@@ -58,11 +58,6 @@ public class MetodosPrincipais {
                 }
 
                 votacao[i].codCandidato = Integer.parseInt(JOptionPane.showInputDialog(candidatos));
-                /* 
-                {Teste para OptionDialog}
-                String[] candidatosVet = {"José", "Maria", "Branco", "Nulo"};
-                votacao[i].codCandidato = JOptionPane.showOptionDialog(null,"Escolha o seu voto","Votação",JOptionPane.DEFAULT_OPTION,JOptionPane.INFORMATION_MESSAGE,null,candidatos,candidatos[0]);
-                */
 
                 //Coleta e verifica se o número de eleitor é válido 
                 boolean coletaNum = false;
@@ -123,12 +118,12 @@ public class MetodosPrincipais {
 
                 votacao[i].codCandidato = Integer.parseInt(JOptionPane.showInputDialog(candidatos));
                 
-                /* 
+                /*TODO:IDEIA
                 {Teste para OptionDialog}
                 String[] candidatosVet = {"José", "Maria", "Branco", "Nulo"};
                 votacao[i].codCandidato = JOptionPane.showOptionDialog(null,"Escolha o seu voto","Votação",JOptionPane.DEFAULT_OPTION,JOptionPane.INFORMATION_MESSAGE,null,candidatos,candidatos[0]);
                 */
-
+                
                 //Coleta e verifica se o número de eleitor é válido 
                 boolean coletaNum = false;
                 while(coletaNum == false){

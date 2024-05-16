@@ -71,7 +71,7 @@ public class Principal {
                     apuracao = metodo.agruparApuracao(apuracao, votacao1, votacao2);
                     break;
                 case 4: //Menu Estatísticas
-                    menu.menuEstatistica(apuracao);
+                    menu.menuEstatistica(apuracao, cadastro);
                     break;
                 case 9: //Fim
                     JOptionPane.showMessageDialog(null, "Finalizando");
