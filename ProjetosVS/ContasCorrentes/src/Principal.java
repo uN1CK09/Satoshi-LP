@@ -12,7 +12,7 @@ public class Principal {
         Metodos met = new Metodos();
 
         String menu = """
-                    Contas Correntes
+                             Contas Correntes
                 1 - Cadastra contas correntes
                 2 - Cadastra movimento
                 3 - Gera conta atualizadas
@@ -40,8 +40,10 @@ public class Principal {
                     regContas = met.cadastraContasCorrentes(regContasAtulizadas);
                     break;
                 case 2: //Cadastra movimento
+                    regMovimentos = met.cadastraMovimentos(regMovimentos);
                     break;
                 case 3: //Atualiza contas
+                    regContasAtulizadas = met.atualizaContas(regContas, regContasAtulizadas, regMovimentos);
                     break;
                 case 4: //Consulta cadastros
                     menu2.menuConsulta(regContas, regContasAtulizadas, regMovimentos);
@@ -53,8 +55,6 @@ public class Principal {
                     JOptionPane.showMessageDialog(null, "Opção inválida");
                     break;
                 }
-        
         }
     }
 }
-
